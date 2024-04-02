@@ -1,7 +1,5 @@
 # pybioinfo-utils
 
-Sure, here's a README for the repository containing the provided functions:
-
 ---
 
 # pybioinfo-utils
