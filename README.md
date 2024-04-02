@@ -1,9 +1,6 @@
 # pybioinfo-utils
 
 ---
-
-# pybioinfo-utils
-
 pybioinfo-utils is a collection of small Python functions designed for bioinformatics applications, particularly focused on protein sequence processing. These functions aim to simplify common tasks such as sequence manipulation, file format conversion, and sequence analysis.
 
 ## Functions
