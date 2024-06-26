@@ -5,7 +5,7 @@ pybioinfo-utils is a collection of small Python functions designed for bioinform
 
 ## Functions
 
-### `remove_gaps`
+### `remove_gaps.py`
 
 This function removes dash characters ("-") from protein sequences in a FASTA file and writes the cleaned sequences to a new file.
 
@@ -13,7 +13,7 @@ This function removes dash characters ("-") from protein sequences in a FASTA fi
 remove_gaps(input_file, output_file)
 ```
 
-### `fasta_to_uppercase_and_dashes`
+### `fasta_to_uppercase_and_dashes.py`
 
 This function converts lowercase characters to uppercase and replaces dots (".") with dashes ("-") in a protein sequence.
 
@@ -21,12 +21,12 @@ This function converts lowercase characters to uppercase and replaces dots (".")
 fasta_to_uppercase_and_dashes(input_file, output_file)
 ```
 
-### `fasta_to_nested_list`
+### `aa_distribution.py`
 
-This function reads sequences from a FASTA file and converts them into a nested list format, where each sequence is represented as a list of amino acids.
+This function plots the amino acid distribution for each position in the Multiple Sequence Aignment of protein sequences from the given input FASTA file.
 
 ```python
-nested_list = fasta_to_nested_list(input_file)
+aa_distribution(fasta_file)
 ```
 
 ### `remove_columns_with_high_gap_frequency`
@@ -45,31 +45,29 @@ This function writes sequences from a nested list to a FASTA file.
 write_to_fasta(output_file, data)
 ```
 
-### `fasta_to_clustal`
+### `convert_fasta_to_clustal.py`
 
-This function converts FASTA files to Clustal format.
+This Python script contains two functions. One to convert a FASTA file to Clustal format and the other to convert a directory of FASTA files to Clustal format files.
 
 ```python
 fasta_to_clustal(input_fasta, output_clustal)
 ```
-
-### `align_sequences`
-
-This function aligns sequences in a FASTA file by padding or truncating them to the maximum length.
-
-```python
-align_sequences(input_file, output_file)
-```
-
-### `convert_directory`
-
-This function converts multiple FASTA files in a directory to Clustal format.
-
 ```python
 convert_directory(input_dir, output_dir)
 ```
 
-### `count_sequences_in_fasta`
+### `convert_seq_to_fasta.py`
+
+This Python script contains two functions. One to convert a file in seq format to FASTA format and the other to convert a directory of seq files to FASTA files.
+
+```python
+convert_seq_to_fasta(input_file, output_file)
+```
+```python
+batch_convert_seq_to_fasta(input_dir, output_dir)
+```
+
+### `count_sequences_in_fasta.py`
 
 This function counts the number of sequences in a FASTA file.
 
@@ -77,13 +75,17 @@ This function counts the number of sequences in a FASTA file.
 sequence_count = count_sequences_in_fasta(fasta_file)
 ```
 
-### `find_consensus`
+### `find_consensus_without_gaps.py`
 
-This function calculates consensus sequences from multiple sequence alignments and writes them to an output file.
+This script contains a function that calculates consensus sequences from multiple sequence alignments and writes them to an output file.
 
 ```python
 find_consensus(input_dir, output_file)
 ```
+
+### `make_seq_same_length.py`
+
+This script contains a function that 
 
 ### `pfam2fasta`
 
