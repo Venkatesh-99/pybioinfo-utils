@@ -1,5 +1,3 @@
-# pfam_converter.py
-
 from Bio import AlignIO
 from Bio import SeqIO
 
@@ -15,5 +13,3 @@ def pfam2fasta(input_file, output_file):
         print(rec.id[:-10], end=" ")
     with open(output_file, 'w') as outfile:
         SeqIO.write(alignment, outfile, 'fasta')
-
-pfam2fasta('/home/venkatesh/struct_motifs/pdb/PF00753.alignment.seed/SEED.ann', '/home/venkatesh/struct_motifs/pdb/PF00753.alignment.seed/metalo.fasta')
