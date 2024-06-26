@@ -3,7 +3,7 @@ from collections import Counter
 import numpy as np
 import matplotlib.pyplot as plt
 
-def plot_amino_acid_distribution(fasta_file):
+def aa_distribution(fasta_file):
     """
     Plot the amino acid distribution for each position in the alignment.
 
