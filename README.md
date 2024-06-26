@@ -5,12 +5,12 @@ pybioinfo-utils is a collection of small Python functions designed for bioinform
 
 ## Functions
 
-### `remove_dash`
+### `remove_gaps`
 
 This function removes dash characters ("-") from protein sequences in a FASTA file and writes the cleaned sequences to a new file.
 
 ```python
-remove_dash(input_file, output_file)
+remove_gaps(input_file, output_file)
 ```
 
 ### `fasta_to_uppercase_and_dashes`
