@@ -85,7 +85,18 @@ pfam2fasta(input_file, output_file)
 
 ### `remove_gaps_in_aln.py`
 
-This Python script contains three functions. One to convert a given input FASTA file to a nested list format, another to remove columns with high gap frequency, and finally write the new
+This Python script contains three functions. One to convert a given input multiple sequence alignment in FASTA format to a nested list format, another to remove columns in the multiple sequence alignment with high gap frequency, and finally write the new multiple sequence alignment to a FASTA file.
+
+```python
+fasta_to_nested_list(input_file)
+```
+```python
+remove_columns_with_high_gap_frequency(nested_list, threshold)
+```
+```python
+write_to_fasta(output_file, data)
+```
+
 ## Usage
 
 To use these functions, simply import them into your Python script or interactive session and provide the required input parameters. See individual function descriptions for usage examples.
