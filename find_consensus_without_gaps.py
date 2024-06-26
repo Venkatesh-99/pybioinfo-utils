@@ -4,15 +4,6 @@ from Bio.Align.AlignInfo import SummaryInfo
 import os
 
 
-
-
-def remove_gaps(sequence):
-    """
-    Remove gaps ('-') from the sequence
-    """
-    # Remove gaps ('-') from the sequence
-    return sequence.replace('-', '')
-
 def find_consensus(input_dir, output_file):
     """
     Function to find consensus sequences from alignment files in the input directory and write them to the output file.
@@ -21,6 +12,13 @@ def find_consensus(input_dir, output_file):
     :param output_file: The file to write the consensus sequences to
     :return: None
     """
+    def remove_gaps(sequence):
+        """
+        Remove gaps ('-') from the sequence
+        """
+        # Remove gaps ('-') from the sequence
+        return sequence.replace('-', '')
+
     consensus_sequences = []
 
     # Iterate over each alignment file in the input directory
