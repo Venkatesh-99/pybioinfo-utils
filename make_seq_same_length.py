@@ -1,4 +1,4 @@
-def align_sequences(input_file, output_file):
+def make_seq_same_length(input_file, output_file):
     """
     Align sequences by padding or truncating each sequence to the maximum length.
 
